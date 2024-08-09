@@ -1,0 +1,27 @@
+import kotlin.Boolean;
+
+CREATE TABLE DbBird (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  image TEXT NOT NULL,
+  category TEXT NOT NULL,
+  author TEXT NOT NULL,
+  isFavorite INTEGER AS Boolean NOT NULL
+);
+
+getBirds:
+SELECT * FROM DbBird;
+
+getBird:
+SELECT * FROM DbBird WHERE id = :id;
+
+saveBird:
+INSERT INTO DbBird(id, image, category, author, isFavorite)
+VALUES(?, ?, ? , ?, 0);
+
+setIsFavorite:
+UPDATE DbBird
+SET isFavorite = :isFavorite
+WHERE id = :id;
+
+getFavoriteBirds:
+SELECT * FROM DbBird WHERE isFavorite = 1;
