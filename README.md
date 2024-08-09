@@ -1,14 +1,19 @@
-This is a Kotlin Multiplatform project targeting Android, iOS.
+This is a little App to showcase Kotlin Multiplatform with shared UI between Android and iOS with Compose Multiplatform.
 
-* `/composeApp` is for code that will be shared across your Compose Multiplatform applications.
-  It contains several subfolders:
-  - `commonMain` is for code that’s common for all targets.
-  - Other folders are for Kotlin code that will be compiled for only the platform indicated in the folder name.
-    For example, if you want to use Apple’s CoreCrypto for the iOS part of your Kotlin app,
-    `iosMain` would be the right folder for such calls.
+It is based on [Jetbrains Showcase Video](https://www.youtube.com/watch?v=5_W5YKPShZ4) and advances the App with MVVM, Navigation, Dependency Injection, use of Database etc.
 
-* `/iosApp` contains iOS applications. Even if you’re sharing your UI with Compose Multiplatform, 
-  you need this entry point for your iOS app. This is also where you should add SwiftUI code for your project.
+## What was used?
+- MVVM
+- Compose Multiplatform
+- Navigation with Precompose
+- Ktor
+- DI with Koin
+- Database with SQLDelight
 
+## Pictures from iOS App
+<img src="https://github.com/user-attachments/assets/1bd60a4b-dbfd-407b-9172-ddcf67a8883a" alt="drawing" width="200"/>
+<img src="https://github.com/user-attachments/assets/196f527d-b140-451f-8b44-994aa3c7b037" alt="drawing" width="200"/>
+<img src="https://github.com/user-attachments/assets/73554ead-1f15-40bf-9afb-bba4c2a8fc22" alt="drawing" width="200"/>
 
-Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html)…
+## Demo Video from Android App
+<video src='https://github.com/user-attachments/assets/d6567505-8031-4863-a8bc-d4152b4a76b3' width=200/>
